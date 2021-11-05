@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "charmonium.async_subprocess"
-version = "0.1.0"
+version = "0.1.1"
 description = "async clone of subprocess.run"
 authors = ["Samuel Grayson <sam@samgrayson.me>"]
 license = "MIT"
