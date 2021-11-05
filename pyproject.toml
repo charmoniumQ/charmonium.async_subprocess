@@ -5,6 +5,7 @@ description = "async clone of subprocess.run"
 authors = ["Samuel Grayson <sam@samgrayson.me>"]
 license = "MIT"
 readme = "README.rst"
+repository = "https://github.com/charmoniumQ/charmonium.async_subprocess.git"
 packages = [
     { include = "charmonium" },
 ]
