@@ -4,6 +4,9 @@ version = "0.1.0"
 description = "async clone of subprocess.run"
 authors = ["Samuel Grayson <sam@samgrayson.me>"]
 license = "MIT"
+packages = [
+    { include = "charmonium" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.7"
