@@ -4,7 +4,7 @@ import asyncio
 import textwrap
 import datetime
 import shlex
-from typing import IO, Any, Optional, Sequence, Mapping, Union, Optional, cast
+from typing import IO, Any, Optional, Sequence, Mapping, Union, Optional, Dict, cast
 import subprocess
 import os
 from pathlib import Path
@@ -78,7 +78,7 @@ async def run(
 
     """
 
-    env = cast(dict[StrBytes, StrBytes], dict(env if env is not None else os.environ))  # type: ignore
+    env = cast(Dict[StrBytes, StrBytes], dict(env if env is not None else os.environ))  # type: ignore
     if env_override:
         env.update(env_override)
 
