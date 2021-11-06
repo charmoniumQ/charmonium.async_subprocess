@@ -21,3 +21,6 @@ async def test_run() -> None:
             text=True,
         )
     ).stdout == "a=b\n"
+    await run(
+        ["/usr/bin/echo"],
+    )

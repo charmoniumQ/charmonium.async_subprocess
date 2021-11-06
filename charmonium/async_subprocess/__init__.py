@@ -85,6 +85,9 @@ async def run(
     if capture_output:
         stdout = subprocess.PIPE
         stderr = subprocess.PIPE
+    else:
+        stdout = subprocess.DEVNULL
+        stderr = subprocess.DEVNULL
 
     proc = await asyncio.create_subprocess_exec(
         *args,
